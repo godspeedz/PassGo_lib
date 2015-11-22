@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_launcher_select_actionbar_RELATIVELAYOUT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff2c7095" >
+
+    <RelativeLayout
+        android:id="@+id/passgo_type_pattern_kind_actionbar_next_RELATIVELAYOUT"
+        android:layout_width="80.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/home_launcher_select_actionbar_refresh_IMAGEVIEW"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:src="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/home_launcher_select_actionbar_refresh_TEXTVIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/home_launcher_select_actionbar_refresh_IMAGEVIEW"
+            android:text="@string/COMMON_NEXT"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffeeeeee"
+            android:textSize="14.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passgo_type_pattern_kind_actionbar_mainSelector_RELATIVELAYOUT"
+        android:layout_width="220.0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/selector"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/home_launcher_select_actionbar_back_IMAGEVIEW"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-4.0dip"
+            android:src="@drawable/ic_action_back" />
+
+        <ImageView
+            android:id="@+id/home_launcher_select_actionbar_icon_IMAGEVIEW"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-6.0dip"
+            android:layout_toRightOf="@+id/home_launcher_select_actionbar_back_IMAGEVIEW"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/ic_setting" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/home_launcher_select_actionbar_icon_IMAGEVIEW"
+            android:layout_toRightOf="@+id/home_launcher_select_actionbar_icon_IMAGEVIEW"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/home_launcher_select_actionbar_icon_IMAGEVIEW"
+            android:layout_toRightOf="@+id/home_launcher_select_actionbar_icon_IMAGEVIEW"
+            android:paddingTop="0.5dip"
+            android:textColor="#ffffffff"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

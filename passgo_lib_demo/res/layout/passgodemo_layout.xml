@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    tools:context=".PassGoDemoActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/passgo_patternbutton_layout_RELATIVELAYOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/passgo_pattern_draw_activity_title_TEXTVIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Demo activity to use PassGo lib ^_^"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+    <com.passgo.libproj.PassgoPatternView
+        android:id="@+id/demo_PassgoPATTERNVIEW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90.0dip" />
+
+    <LinearLayout
+        android:id="@+id/mLlayoutBottomButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/setpassgobutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:paddingBottom="18dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="18dip"
+            android:text="Set your PassGo"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/crackpassgobutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:paddingBottom="18dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="18dip"
+            android:text="Try to Crack PassGo !"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/donebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:paddingBottom="18dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="18dip"
+            android:text="Success ! Return !!"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/retrybutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:paddingBottom="18dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="18dip"
+            android:text="Too Many Failures ! Retry Again !"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

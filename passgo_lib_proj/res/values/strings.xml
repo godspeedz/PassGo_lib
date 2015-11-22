@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="faq">FAQ</string>
+    <string name="app_about">About</string>
+    <string name="COMMON_NEXT"></string>
+    <string name="tab_clear">Clear</string>
+    <string name="tab_cancel">Cancel</string>
+    <string name="tab_confirm">Confirm</string>
+    <string name="tab_continue">Continue</string>
+    <string name="PassGo_changed">PassGo changed</string>
+    <string name="DRAW_PATTERN_PIN_HELP">Set Backup PIN</string>
+    <string name="DRAW_PATTERN_PIN_HELP_ERROR">PINs do not match, try again</string>
+    <string name="DRAW_PATTERN_PIN_HELP_ERROR_TOAST">PIN is not entered</string>
+    <string name="DRAW_PATTERN_PIN_HELP_II">Confirm PIN</string>
+    <string name="DRAW_PATTERN_PIN_SUBTITLE">Input Backup Key(PIN)</string>
+    <string name="SET_BACKUP_PIN">Set Backup PIN</string>
+    <string name="CONFIRM_BACKUP_PIN">Confirm Backup PIN</string>
+    <string name="INPUT_PIN_SUBTITLE">Input PIN</string>
+    <string name="PIN_changed">PIN changed</string>
+    <string name="INPUT_PIN_LESS_THAN_FHOUR_TOAST">PIN needs at least 4 numbers</string>
+    <string name="DRAW_PATTERN_HELP_ERROR">PassGo do not match, try again</string>
+    <string name="DRAW_PATTERN_HELP_II">Draw PassGo again to confirm</string>
+    <string name="DRAW_PATTERN_HELP_SUCCESS">Your PassGo will be saved as</string>
+    <string name="LOGIN_PATTERN_HELP_ERROR">Wrong PassGo, try again</string>
+    <string name="LOGIN_PATTERN_HELP_CONTINUE">Wrong PassGo, continue</string>
+    <string name="LOGIN_PATTERN_PIN_HELP_ERROR">Wrong PIN, try again</string>
+    <string name="LOCK_TYPE_PATTERN_SIZE_HELP">Choose grid size</string>
+    <string name="SET_YOUR_PASSGO">Set Your PassGo</string>
+    <string name="CONFIRM_YOUR_PASSGO">Confirm Your PassGo</string>
+    <string name="DRAW_PATTERN_HELP">Draw your PassGo</string>
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+
+</resources>

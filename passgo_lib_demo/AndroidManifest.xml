@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="passgo.lib.demo"
+    android:versionCode="5"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".PassGoDemoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Include Activities from passgo_lib_proj. -->
+        <activity
+            android:name="com.passgo.libproj.PassgoPatternSizeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.passgo.libproj.PatternDrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.passgo.libproj.CheckPassgoPatternActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+    </application>
+
+</manifest>

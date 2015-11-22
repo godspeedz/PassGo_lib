@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <!--
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="40.0dip"
+    android:background="#55000000"
+    android:gravity="left"
+    -->
+
+
+    <!-- PassGo correct/wrong indication layout -->
+
+    <RelativeLayout
+        android:id="@+id/passgo_patterninfo_layout_RELATIVELAYOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passgo_pattern_main_service_activity_LOCKPATTERNVIEW"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/passgo_pattern_draw_activity_title_TEXTVIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="@string/DRAW_PATTERN_HELP"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- PassGo pattern layout -->
+
+    <com.passgo.libproj.PassgoPatternView
+        android:id="@+id/passgo_pattern_main_service_activity_LOCKPATTERNVIEW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45.0dip" />
+
+    <!-- PassGo PIN pattern layout -->
+
+    <RelativeLayout
+        android:id="@+id/passgo_pin_layout_RELATIVELAYOUT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30.0dip"
+        android:paddingBottom="50.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/passgo_pin_layout_pin_delete_password_IMAGEBUTTON"
+                    android:layout_width="80.0dip"
+                    android:layout_height="43.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector"
+                    android:src="@drawable/ic_input_delete" />
+
+                <RelativeLayout
+                    android:id="@+id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#ffffffff" />
+
+                <EditText
+                    android:id="@+id/passgo_pin_layout_password_char_EDITTEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/passgo_pin_layout_pin_delete_password_IMAGEBUTTON"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:textAppearance="@style/TextAppearance.NumPadKey"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relativeLayout1"
+                android:layout_alignRight="@id/relativeLayout1"
+                android:layout_below="@id/relativeLayout1" >
+
+                <LinearLayout
+                    android:id="@+id/Numpad_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_1_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/passgo_pin_layout_i_activity_2_IMAGEBUTTON"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num1" />
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_2_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/passgo_pin_layout_i_activity_1_IMAGEBUTTON"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:paddingLeft="1.0dip"
+                        android:src="@drawable/sym_keyboard_num2" />
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_3_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/passgo_pin_layout_i_activity_1_IMAGEBUTTON"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Numpad_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Numpad_1"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_4_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/passgo_pin_layout_i_activity_1_IMAGEBUTTON"
+                        android:layout_below="@id/passgo_pin_layout_i_activity_1_IMAGEBUTTON"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num4" />
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_5_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/passgo_pin_layout_i_activity_4_IMAGEBUTTON"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num5" />
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_6_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/passgo_pin_layout_i_activity_5_IMAGEBUTTON"
+                        android:layout_toRightOf="@id/passgo_pin_layout_i_activity_5_IMAGEBUTTON"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Numpad_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Numpad_2"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_7_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/passgo_pin_layout_i_activity_4_IMAGEBUTTON"
+                        android:layout_below="@id/passgo_pin_layout_i_activity_4_IMAGEBUTTON"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num7" />
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_8_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/passgo_pin_layout_i_activity_4_IMAGEBUTTON"
+                        android:layout_toRightOf="@id/passgo_pin_layout_i_activity_4_IMAGEBUTTON"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num8" />
+
+                    <ImageButton
+                        android:id="@+id/passgo_pin_layout_i_activity_9_IMAGEBUTTON"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/passgo_pin_layout_i_activity_5_IMAGEBUTTON"
+                        android:layout_toRightOf="@id/passgo_pin_layout_i_activity_5_IMAGEBUTTON"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/selector"
+                        android:src="@drawable/sym_keyboard_num9" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/passgo_pin_layout_i_activity_0_IMAGEBUTTON"
+                android:layout_width="85.0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector"
+                android:src="@drawable/sym_keyboard_num0_no_plus" />
+
+            <ImageButton
+                android:id="@+id/passgo_pin_layout_i_activity_ok_IMAGEBUTTON"
+                android:layout_width="85.0dip"
+                android:layout_height="54.0dip"
+                android:layout_alignRight="@+id/RelativeLayout01"
+                android:layout_below="@id/relativeLayout2"
+                android:layout_toRightOf="@id/passgo_pin_layout_i_activity_0_IMAGEBUTTON"
+                android:background="@drawable/selector"
+                android:src="@drawable/sym_keyboard_ok" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="1.0dip"
+                android:layout_alignBottom="@id/passgo_pin_layout_i_activity_0_IMAGEBUTTON"
+                android:layout_alignLeft="@id/relativeLayout2"
+                android:layout_alignRight="@id/relativeLayout2"
+                android:background="#ffffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="7.0dip"
+            android:text="@string/DRAW_PATTERN_PIN_SUBTITLE"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>
